@@ -1,5 +1,6 @@
 name: Main Kittygram workflow
 
+# on: push ---> Или так? Запустить jobs при любом пуше в любую ветку, но деплой только если пуш в main
 on:
   push:
     branches:
@@ -129,6 +130,7 @@ jobs:
       - build_and_push_to_docker_hub
       - build_frontend_and_push_to_docker_hub
       - build_gateway_and_push_to_docker_hub
+    if: github.ref == 'refs/heads/main'
     steps:
     - name: Checkout repo
       uses: actions/checkout@v3
