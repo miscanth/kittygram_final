@@ -8,8 +8,7 @@ class CatAdmin(admin.ModelAdmin):
         'name',
         'color',
         'birth_year',
-        'owner',
-        'achievements'
+        'owner'
     )
     empty_value_display = '-пусто-'
 
