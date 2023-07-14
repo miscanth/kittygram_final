@@ -22,7 +22,7 @@ class AchievementAdmin(admin.ModelAdmin):
 class AchievementCatAdmin(admin.ModelAdmin):
     list_display = (
         'cat',
-        'achievements'
+        'achievement'
     )
     empty_value_display = '-пусто-'
 
