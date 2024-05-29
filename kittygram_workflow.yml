@@ -1,6 +1,5 @@
 name: Main Kittygram workflow
 
-# on: push ---> Или так? Запустить jobs при любом пуше в любую ветку, но деплой только если пуш в main
 on:
   push:
     branches:
