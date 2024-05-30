@@ -96,6 +96,8 @@ POSTGRES_PASSWORD=пароль
 POSTGRES_DB=название БД
 DB_HOST=название хоста
 DB_PORT=5432
+SECRET_KEY=django_settings_secret_key
+ALLOWED_HOSTS=127.0.0.1, localhost
 ```
 
 **Запустить Docker Compose с дефолтной конфигурацией (docker-compose.yml):**
